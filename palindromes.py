@@ -25,6 +25,7 @@ def check_palindrome(p_word): #function that check the word if it is a palindrom
 for word in word_File:
     words = list(word.strip())
     check_palindrome(words)
+    print(words)
     
     
 
