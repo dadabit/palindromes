@@ -1,6 +1,6 @@
 word_File = open('words.txt', 'r') #open the file
 
-def check_palindrome(p_word): #function that check the word if it is a palindrome
+def check_palindrome(p_word, p_rw): #function that check the word if it is a palindrome
 
     last = len(p_word) - 1
     first = 0
@@ -13,19 +13,18 @@ def check_palindrome(p_word): #function that check the word if it is a palindrom
         if p_word[last] == p_word[first]:
             is_palindrome_times += 1
         else:
-            print("this is not a palindrome")
+            print(p_rw + " is not a palindrome")
             first = count + 1
     
         first += 1
         last -= 1
     
         if is_palindrome_times >= count:
-            print("this is a palindromes")
+            print(p_rw + "this is a palindromes")
             
 for word in word_File:
     words = list(word.strip())
-    check_palindrome(words)
-    print(words)
+    check_palindrome(words, word)
     
     
 
