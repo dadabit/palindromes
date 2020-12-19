@@ -11,7 +11,7 @@ while first <= count:
     if word[last] == word[first]:
         print(word[last] + " and " + word[first] + " is the same!")
     
-    first += 1
+    first += 2
     last -= 1
     
     
