@@ -20,9 +20,10 @@ def check_palindrome(p_word, p_rw): #function that check the word if it is a pal
         last -= 1
     
         if is_palindrome_times >= count:
-            print(p_rw + "this is a palindromes")
+            print(p_rw + " is a palindromes")
             
 for word in word_File:
+    word = word.strip()
     words = list(word.strip())
     check_palindrome(words, word)
     
