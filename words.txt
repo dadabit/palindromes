@@ -1,1 +1,1 @@
-//type some word to check if it is palindromes
+racecar
